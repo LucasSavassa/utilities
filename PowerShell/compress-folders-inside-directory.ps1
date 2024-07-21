@@ -1,5 +1,5 @@
 # Set the root directory
-$rootDir = "C:\Users\lucas\OneDrive\Desktop\Survision\Test\Invalid queue entry\Invalid metadata\Invalid date"
+$rootDir = ""
 
 # Check if the root directory exists
 if (-Not (Test-Path -Path $rootDir)) {
