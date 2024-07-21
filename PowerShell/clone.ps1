@@ -26,7 +26,7 @@ $word = Read-Host "Enter the word that will match the pattern <word>-<id>"
 $folderName = Read-Host "Enter the folder name matching the pattern '$word-<id>'"
 
 # Validate the folder name pattern
-if ($folderName -notmatch "^\Q$word\E-\d+$") {
+if ($folderName -notmatch "$word-\d+$") {
     Write-Host "Invalid folder name. Please enter a name matching the pattern '$word-<id>' where <id> is a positive integer."
     exit
 }
