@@ -10,7 +10,7 @@ function Get-HumanReadableSize {
 }
 
 # Change the path below as needed
-$path = "C:\Your\Folder\Here"
+$path = "C:\"
 
 Get-ChildItem -Path $path -Recurse -File -ErrorAction SilentlyContinue |
     Sort-Object Length -Descending |
